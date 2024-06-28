@@ -1,0 +1,40 @@
+.sidebar{
+    scrollbar-width: thin;
+    scrollbar-color: #999999 transparent;
+}
+
+.sidebar::-webkit-scrollbar {
+    background: #999999 !important;
+    width: 3px !important;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background: transparent !important;
+    border-radius: 10px;
+}
+
+.logo-title{
+    display: block;
+    position: relative;
+}
+
+
+.logo-title::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 8px;
+    width: 1px;
+    height: 100%;
+    background-color: #6e768e;
+    animation: animate 4s steps(12) infinite;
+}
+
+@keyframes animate{
+    40%, 60%{
+        left: 100%;
+    }
+    100%{
+        left: 0%;
+    }
+}
