@@ -1,6 +1,8 @@
 import { SideNavItemGroup } from "@/types/types";
-import { BsHouseDoor, BsQuestionCircleFill } from "react-icons/bs";
-import { FaEnvelope, FaGear, FaListUl } from "react-icons/fa6";
+import { BsHouseDoor } from "react-icons/bs";
+import { FaRegQuestionCircle } from "react-icons/fa";
+import { FaListUl, FaRegEnvelope } from "react-icons/fa6";
+import { GoGear } from "react-icons/go";
 import { LuKanbanSquare } from "react-icons/lu";
 
 export const SIDENAV_ITEMS: SideNavItemGroup[] = [
@@ -35,7 +37,7 @@ export const SIDENAV_ITEMS: SideNavItemGroup[] = [
             {
                 title: 'Feedbacks',
                 path: '/feedbacks',
-                icon: <FaEnvelope size={20}/>
+                icon: <FaRegEnvelope size={20}/>
             },
         ]
     },
@@ -45,12 +47,12 @@ export const SIDENAV_ITEMS: SideNavItemGroup[] = [
             {
                 title: 'Account',
                 path: '/account',
-                icon: <FaGear size={20}/>
+                icon: <GoGear size={20}/>
             },
             {
                 title: 'Help',
                 path: '/help',
-                icon: <BsQuestionCircleFill size={20}/>
+                icon: <FaRegQuestionCircle size={20}/>
             },
         ]
     }

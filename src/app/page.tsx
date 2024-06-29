@@ -127,7 +127,7 @@ export default function Dashboard() {
                       </CardDescription>
                     </CardHeader>
                     <CardContent>
-                      {/* <RecentSales /> */}
+                      <RecentSales />
                     </CardContent>
                   </Card>
                 </div>

@@ -5,6 +5,7 @@ import "./globals.css";
 import DashboardSidebar from "@/components/dashboard-sidebar/DashboardSidebar";
 import DashboardHeader from "@/components/dashboard-header/DashboardHeader";
 import DashboardWrapper from "@/components/dashboard-wrapper/DashboardWrapper";
+import { ThemeProvider } from "@/components/ThemeProvider/theme-provider";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -24,11 +25,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={roboto.className}> 
-        <div className="flex min-h-screen">
-          <DashboardSidebar  />
-          <DashboardHeader  />
-          <DashboardWrapper children = {children}></DashboardWrapper>
-        </div>
+        <ThemeProvider 
+           attribute="class"
+           defaultTheme="system"
+           enableSystem
+           disableTransitionOnChange
+        >
+          <div className="flex min-h-screen">
+            <DashboardSidebar  />
+            <DashboardHeader  />
+            <DashboardWrapper children = {children}></DashboardWrapper>
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   );

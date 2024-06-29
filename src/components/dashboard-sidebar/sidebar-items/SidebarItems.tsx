@@ -10,9 +10,9 @@ export const SidebarMenuItems = ({ item }: {item : SideNavItems }) => {
 
     const {toggleCollapse} = useSidebarToggle();
     const pathName = usePathname();
-    const activeLinkStyle =' rounded-md text-white light:text-black light:bg-[#efefef] bg-[#3a3f48]';
-    const styleMenu ="flex items-center min-h-[40px] h-full text-[#6e768e] py-2 px-4 hover:text-white rounded-md transiton duration-200" ;
-    const  navMenuDropdownItem = " text-[#6e768e] py-2 px-4 hover:text-white transiton duration-200";
+    const activeLinkStyle =' rounded-md text-sidebar-muted-foreground text-sidebar-foreground light:bg-[#efefef] bg-sidebar-muted';
+    const styleMenu ="flex items-center min-h-[40px] h-full text-sidebar-foreground py-2 px-4 hover:text-sidebar-muted-foreground rounded-md transiton duration-200" ;
+    const  navMenuDropdownItem = " text-sidebar-foreground py-2 px-4 hover:text-sidebar-muted-foreground transiton duration-200";
     const [subMenuOpen, setSubMenuOpne] = useState(false);
     const toggleSubMenu = () => {
         setSubMenuOpne(!subMenuOpen)
@@ -33,7 +33,7 @@ export const SidebarMenuItems = ({ item }: {item : SideNavItems }) => {
                                 </>
                             }
                         </a>
-                        {subMenuOpen && !toggleCollapse && <div className="bg-[#3a3f48] border-l-4">
+                        {subMenuOpen && !toggleCollapse && <div className="bg-sidebar-muted border-l-4">
                             <div className="grid gap-y-2 px-10 py-3 leading-5  ">
                                 {
                                     item.subMenuItems.map((subItem, index) =>{
