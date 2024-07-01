@@ -72,6 +72,7 @@
       --sidebar-foreground: 0 0% 98%;
       --sidebar-muted: 0 2% 10%;
       --sidebar-muted-foreground: 0 0% 63.9%;
+      --hover1: 0, 0%, 93.73%;
     }
 
     .custom {
@@ -96,9 +97,10 @@
       --ring: 20 14.3% 4.1%;
       --radius: 0.5rem;
       --sidebar: 220 11% 22%;
-      --sidebar-foreground: 225 13% 49%;
+      --sidebar-foreground: 225.6, 11.96%, 59.02%;
       --sidebar-muted: 219, 100%, 100%;
       --sidebar-muted-foreground: 60 9.1% 97.8%;
+      --hover1: 225.6, 11.96%, 59.02%;
     }
   }
 
@@ -108,5 +110,12 @@
     }
     body {
       @apply bg-background text-foreground;
+    }
+  }
+
+  @layer components {
+    .border-1-white {
+      @apply border border-white;
+      border-width: 1px;
     }
   }

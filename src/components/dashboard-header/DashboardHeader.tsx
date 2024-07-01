@@ -15,7 +15,7 @@ export default function DashboardHeader() {
   return (
     <header className={`${headerNormalStyle} ${headerCollapseStyle}`}>
       <div className='flex items-center justify-between h-16'>
-        <button onClick={handleSidebarToggle} className='order-2 sm:order-1 bg-sidebar text-sidebar-muted-foreground hover:bg-foreground hover:text-background ml-3 rounded-md w-[30px] h-[30px] shadow-md shadow-black/10 transition duration-300 ease-in-out flex justify-center items-center'>
+        <button onClick={handleSidebarToggle} className='order-2 sm:order-1 bg-sidebar text-sidebar-muted-foreground hover:bg-sidebar-foreground hover:text-background ml-3 rounded-md w-[30px] h-[30px] shadow-md shadow-black/10 transition duration-300 ease-in-out flex justify-center items-center'>
           <VscThreeBars />
         </button>
         <div className='flex items-center justify-between order-1 sm:order-2'>
@@ -23,8 +23,8 @@ export default function DashboardHeader() {
             <ThemeSwitcher></ThemeSwitcher>
           </div>
           <div className='h-10 w-10 rounded-full bg-bg-sidebar-muted flex items-center justify-center text-center'>
-          <UserNav />
-        </div>
+            <UserNav />
+          </div>
         </div>
       </div>
     </header>

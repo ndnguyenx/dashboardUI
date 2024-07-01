@@ -60,7 +60,9 @@ const config = {
             DEFAULT: "hsl(var(--sidebar-muted))",
             foreground: "hsl(var(--sidebar-muted-foreground))",
           }
-        }
+        },
+        textHover: "hsl(var(--hover1))",
+        "hover1-foreground": "hsl(var(--hover1-foreground))",
       },
       borderRadius: {
         lg: "var(--radius)",

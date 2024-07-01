@@ -14,7 +14,9 @@ export default function DashboardSidebar() {
   return (
     <aside className={`${normalStyle} ${checkCollapsedStyle}`}>
       <div className='sidebar-top flex relative items-center py-5 px-3.5 gap-1'>
-        <Image src={logo} alt='logo' width={70} height={30} ></Image>
+        <Image 
+        src={logo} alt='logo' width={70} height={30} className="dark:border-1-white dark:bg-[#fdff00] rounded-[30px] p-[1px]"  >
+        </Image>
         {!toggleCollapse && <h3 className='logo-title pl-2 font-serif text-2xl text-sidebar-foreground min-w-max'>
           Batcave
         </h3>}
