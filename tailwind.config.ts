@@ -61,8 +61,6 @@ const config = {
             foreground: "hsl(var(--sidebar-muted-foreground))",
           }
         },
-        textHover: "hsl(var(--hover1))",
-        "hover1-foreground": "hsl(var(--hover1-foreground))",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -83,9 +81,15 @@ const config = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      backgroundColor: {
+        'white-alpha-15': 'rgba(255, 255, 255, 0.15)',
+      },
+      backgroundImage: {
+        'custom-radial': 'radial-gradient(circle at left top, #f8f8fa , #c0c2ce)',
+      },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"), require('tailwindcss-gradients')],
 } satisfies Config
 
 export default config

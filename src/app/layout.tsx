@@ -16,14 +16,7 @@ export default function RootLayout({ children, }: { children: React.ReactNode })
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={roboto.className + ' h-screen overflow-hidden'}>
-        <ThemeProvider
-          themes={['dark', 'custom', 'light']}
-          attribute="class"
-          enableSystem
-          disableTransitionOnChange
-        >
           {children}
-        </ThemeProvider>
       </body>
     </html>
   )

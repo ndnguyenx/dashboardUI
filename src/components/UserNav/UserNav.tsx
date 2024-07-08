@@ -34,7 +34,9 @@ export default function UserNav() {
             </DropdownMenuGroup>
             <DropdownMenuSeparator className="h-2px bg-[#e6e9ee]" />
                 <DropdownMenuItem>
-                    <Link href="/login" >Log out</Link>
+                    <Link href="/login" className="w-full h-full block">
+                        Log out
+                    </Link>
                 </DropdownMenuItem>
         </DropdownMenuContent>
     </DropdownMenu>
